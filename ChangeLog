@@ -1,6 +1,58 @@
-v 0.2 - Reduced command to thchar and thword.
-        Change the name of source files.
-	Re-write th_brk and rename to thword.
+2001-10-01 Monday 23:42  poonlap
 
-v 0.1 - The first version.
-        Command: thchar, thbrk, thbrk_insert
+	* tcl_thmod.c (1.3): Register thline command.
+
+2001-10-01 Monday 23:41  poonlap
+
+	* thmod.h (1.3): Add prototype of tcl_thline.
+
+2001-10-01 Monday 23:39  poonlap
+
+	* tcl_thwords.c (1.2): Add tcl_thline function: break a long Thai
+	string into line when the length of a line is given.
+
+2001-09-26 Wednesday 12:37  poonlap
+
+	* Makefile (1.4): -ltcl8.3 -> -ltcl
+
+2001-09-26 Wednesday 12:00  poonlap
+
+	* Makefile (1.3): Add -fPIC flag for dynamic link.
+
+2001-09-26 Wednesday 00:55  poonlap
+
+	* Makefile (1.2), pkgIndex.tcl (1.2), tcl_thmod.c (1.2), thmod.h
+	(1.2), samples/th_wordcut.tcl (1.2): Version 0.2 Rename
+	tcl_thctype.c to tcl_thchar.c	     tcl_thbrk.c to tcl_words.c
+	Change Makefile, don't use tcl_thctype.c and tcl_thbrk.c anymore. 
+	Reduce command from thbrk and thbrk_insert to one command, thword
+	with option.  Fixed a sample script(wordcut).
+
+2001-09-26 Wednesday 00:52  poonlap
+
+	* ChangeLog (1.1): Add Changelog
+
+2001-09-26 Wednesday 00:48  poonlap
+
+	* tcl_thwords.c (1.1): Put thbrk and thbrk_insert together: thword
+	Rename the file tcl_thbrk.c to tcl_thwords.c
+
+2001-09-26 Wednesday 00:46  poonlap
+
+	* tcl_thchar.c (1.1): Change code in tcl_thctype.c and renamed to
+	tcl_thchar.c
+
+2001-09-25 Tuesday 00:20  poonlap
+
+	* samples/: README (1.1), char_class.tcl (1.1), characters.txt
+	(1.1), th_wordcut.tcl (1.1), tis2utf.tcl (1.1): Samples on howto
+	use tcl_thmod.
+
+2001-09-25 Tuesday 00:19  poonlap
+
+	* Makefile (1.1), README (1.1), TODO (1.1), pkgIndex.tcl (1.1),
+	tcl_thbrk.c (1.1), tcl_thctype.c (1.1), tcl_thmod.c (1.1), thmod.h
+	(1.1), tis-620.enc (1.1): The first version of tcl_thmod: Thai
+	language manipulation for Tcl/Tk.  The implementation of th_brk,
+	th_brk_line and thctype provided by libthai were done.
+
