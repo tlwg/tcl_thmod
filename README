@@ -1,0 +1,29 @@
+Thai language manipulation module for Tcl/Tk, tcl_thmod
+--------------------------------------------
+This is a short note for using the module.
+
+Necessary files:
+1) tcl_thmod.so, shared library for Tcl/Tk, produced by make.
+2) tis-620.enc, encoding file.
+3) pkgIndex.tcl, package index file.
+
+How to compile:
+1) Just run make then you will get tcl_thmod.so.
+
+How to install:
+1) Login as root.
+2) Copy file tis-620.enc to /usr/lib/tcl8.3/encoding.
+3) Create the directory /usr/lib/tcl8.3/tcl_thmod
+4) Copy tcl_thmod.so and pkgIndex.tcl to /usr/lib/tcl8.3/tcl_mod
+
+* You should change /usr/lib/tcl8.3 to match your system.
+
+
+
+Samples:
+Samples are in samples directory.
+
+
+---
+Poonlap Veerathanabutr <poonlap@linux.thai.net>
+$Id: README,v 1.1 2001-09-24 15:19:42 poonlap Exp $
