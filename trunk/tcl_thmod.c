@@ -2,7 +2,7 @@
  ** Thai module for Tcl/Tk
  ** tcl_thmod.c : main module 
  ** by Poonlap Veerathanabutr <poonlap@linux.thai.net>
- ** $Id: tcl_thmod.c,v 1.4 2001-10-02 13:32:45 poonlap Exp $
+ ** $Id: tcl_thmod.c,v 1.5 2001-10-05 02:29:29 poonlap Exp $
  ****************************/			    
 #include "thmod.h"
 
@@ -55,6 +55,7 @@ int Tcl_thmod_Init(Tcl_Interp *interp) {
   /* configure the encoding to Thai */
   Tcl_Eval( interp, "fconfigure stdin -encoding tis-620");
   Tcl_Eval( interp, "fconfigure stdout -encoding tis-620");  
+  Tcl_Eval( interp, "proc tis {thai_string} {return [encoding convertfrom tis-620 $thai_string]}");
   tis620_enc  = Tcl_GetEncoding( interp, "tis-620");
   
 
