@@ -1,0 +1,6 @@
+v 0.2 - Reduced command to thchar and thword.
+        Change the name of source files.
+	Re-write th_brk and rename to thword.
+
+v 0.1 - The first version.
+        Command: thchar, thbrk, thbrk_insert
