@@ -1,0 +1,5 @@
+$Id: README,v 1.1 2001-09-24 15:20:54 poonlap Exp $
+
+char_class.tcl - demo of thchar
+th_wordcut.tcl - word segmentaion
+tis2utf.tcl - convert tis-620 to utf8
