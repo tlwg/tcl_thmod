@@ -1,6 +1,6 @@
-# $Id: Makefile,v 1.1 2001-09-24 15:19:42 poonlap Exp $
+# $Id: Makefile,v 1.2 2001-09-25 15:55:43 poonlap Exp $
 # Should use autoconf and automake in the future
-OBJS = tcl_thbrk.o tcl_thmod.o tcl_thctype.o
+OBJS = tcl_thwords.o tcl_thmod.o tcl_thchar.o
 CC = gcc
 
 all:	${OBJS} thmod.h
