@@ -1,3 +1,33 @@
+2001-10-02 Tuesday 22:34  poonlap
+
+	* samples/th_string.tcl (1.1): New sample for thcode and thnorm.
+
+2001-10-02 Tuesday 22:32  poonlap
+
+	* tcl_thmod.c (1.4): Register thcode and thnorm.
+
+2001-10-02 Tuesday 22:32  poonlap
+
+	* Makefile (1.5): Add tcl_thstr.c
+
+2001-10-02 Tuesday 22:31  poonlap
+
+	* thmod.h (1.4): Add tcl_thcode and tcl_thnorm.
+
+2001-10-02 Tuesday 22:30  poonlap
+
+	* tcl_thstr.c (1.1): Thai string:	thcode: print characters'
+	code when given encoding name	      thnorm: normalize string
+	sequence
+
+2001-10-02 Tuesday 21:46  poonlap
+
+	* ChangeLog (1.2): Use script to update Changlog
+
+2001-10-01 Monday 23:54  poonlap
+
+	* AUTHORS (1.1): AUTHORS file
+
 2001-10-01 Monday 23:42  poonlap
 
 	* tcl_thmod.c (1.3): Register thline command.
