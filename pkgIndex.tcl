@@ -8,4 +8,4 @@
 # script is sourced, the variable $dir must contain the
 # full path name of this file's directory.
 
-package ifneeded tcl_thmod 0.1 [list load [file join $dir tcl_thmod.so]]
+package ifneeded tcl_thmod 0.2 [list load [file join $dir tcl_thmod.so]]

@@ -2,7 +2,7 @@
  ** Thai module for Tcl/Tk
  ** tcl_thmod.c : main module 
  ** by Poonlap Veerathanabutr <poonlap@linux.thai.net>
- ** $Id: tcl_thmod.c,v 1.1 2001-09-24 15:19:42 poonlap Exp $
+ ** $Id: tcl_thmod.c,v 1.2 2001-09-25 15:55:43 poonlap Exp $
  ****************************/			    
 #include "thmod.h"
 
@@ -69,9 +69,7 @@ int Tcl_thmod_Init(Tcl_Interp *interp) {
   /*
    * Register the new Tcl commands
    */
-  Tcl_CreateObjCommand(interp, "thbrk", tcl_thbrk,
-		       (ClientData)NULL, (Tcl_CmdDeleteProc *)NULL);
-  Tcl_CreateObjCommand(interp, "thbrk_insert", tcl_thbrk_insert,
+  Tcl_CreateObjCommand(interp, "thword", tcl_thword,
 		       (ClientData)NULL, (Tcl_CmdDeleteProc *)NULL);
   Tcl_CreateObjCommand(interp, "thchar", tcl_thctype,
 		       (ClientData)NULL, (Tcl_CmdDeleteProc *)NULL);
