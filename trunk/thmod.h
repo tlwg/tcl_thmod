@@ -2,7 +2,7 @@
  ** Thai module for Tcl/Tk
  ** thmod.h : header for Thai module
  ** by Poonlap Veerathanabutr <poonlap@linux.thai.net>
- ** $Id: thmod.h,v 1.3 2001-10-01 14:41:06 poonlap Exp $
+ ** $Id: thmod.h,v 1.4 2001-10-02 13:31:34 poonlap Exp $
  ****************************/			    
 #include<tcl.h>
 #include<tk.h>
@@ -23,6 +23,10 @@ Tcl_HashTable thctypeTable;
 extern int tcl_thword( ClientData client_data, Tcl_Interp *interp, 
 		      int objc, Tcl_Obj *CONST objv[] );
 extern int tcl_thline( ClientData client_data, Tcl_Interp *interp, 
+		      int objc, Tcl_Obj *CONST objv[] );
+extern int tcl_thcode( ClientData client_data, Tcl_Interp *interp, 
+		      int objc, Tcl_Obj *CONST objv[] );
+extern int tcl_thnorm( ClientData client_data, Tcl_Interp *interp, 
 		      int objc, Tcl_Obj *CONST objv[] );
 /*
  * thai character classification
